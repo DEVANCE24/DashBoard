@@ -13,13 +13,12 @@
 		>
 	</corners>
 	<solid
-		android:color="#990000"
-		>
+		android:color="@android:color/white">
 	</solid>
 
 	<stroke
-		android:color="#ffffff"
-		android:width="0dp"
+		android:color="@android:color/white"
+		android:width="2dp"
 		>
 	</stroke>
 </shape>

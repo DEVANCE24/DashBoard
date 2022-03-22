@@ -13,7 +13,7 @@ namespace DashBoard
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
           
-            SetContentView(Resource.Layout.activity_main);
+            SetContentView(Resource.Layout.dashboard);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
@@ -21,5 +21,5 @@ namespace DashBoard
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-    }
+    } 
 }

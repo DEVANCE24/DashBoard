@@ -7,55 +7,27 @@
 	android:layout_height="match_parent"
 	android:background="#efefef"
 	>
-
+	<FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:id="@+id/frameLayout"/>
 
 	<com.google.android.material.bottomappbar.BottomAppBar
 		android:id="@+id/bottomAppBar"
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_gravity="bottom"
+		android:layout_height="50dp"
+		android:layout_gravity="bottom"		
 		android:backgroundTint="@android:color/white"	
 		
-		
 		>
-	
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:orientation="horizontal"
-			android:gravity="center"
-			android:weightSum="4">
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+			app:menu="@menu/navigation"
+			android:id="@+id/bottomNavigationView"
 			
-			<ImageView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/home"
-				android:layout_marginRight="20dp"
-				android:layout_weight="1"/>			
-			<ImageView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/heart"
-				android:layout_marginRight="20dp"
-				android:layout_weight="1"/>
-			<ImageView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/location"
-				android:layout_marginLeft="20dp"
-				android:layout_weight="1"/>
-			<ImageView
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:src="@drawable/user"
-				android:layout_marginLeft="20dp"
-				android:layout_weight="1"/>
-		
-		
-		
-		</LinearLayout>
-		
-		
+		/>
+			
 
 	</com.google.android.material.bottomappbar.BottomAppBar>
 	
@@ -65,8 +37,8 @@
 	    android:layout_height="wrap_content"
 		android:layout_gravity="center"
 		android:backgroundTint="@color/ultramarineblue"
-		android:src="@android:drawable/ic_input_add"
-		app:layout_anchor="@+id/bottomAppBar"
+		android:src="@drawable/add"
+		app:layout_anchor="@+id/bottomNavigationView"
 		
 	/>
 

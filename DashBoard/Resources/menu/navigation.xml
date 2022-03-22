@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 	<item
-        android:id="@+id/navigation_home"
+        android:id="@+id/home"
         android:icon="@drawable/home"        
 		/>
 	<item
-        android:id="@+id/navigation_favourite"
-        android:icon="@drawable/heart"        
+        android:id="@+id/favourite"
+        android:icon="@drawable/favourite"        
 		/>
 
 	<item
-        android:id="@+id/navigation_location"
+        android:id="@+id/location"
         android:icon="@drawable/location"        
 		/>
 	<item
-	   android:id="@+id/navigation_profile"
-	   android:icon="@drawable/user"	   
+	   android:id="@+id/profile"
+	   android:icon="@drawable/person"	   
 	   />
 
 </menu>

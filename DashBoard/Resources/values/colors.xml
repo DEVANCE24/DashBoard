@@ -5,4 +5,9 @@
     <color name="colorAccent">#3498db</color>
 	<color name="ultramarineblue">#2d62fe</color>
 	<color name="black">#000000</color>
+	<color name="grey">#808080</color>
+	<color name="lightwhite">#efefef</color>
+	<color name="sunsetorange">#ff5e5b</color>
+	<color name="crayolayellow">#FBB41B</color>
+	<color name="mountainmeadow">#2AC999</color>
 </resources>

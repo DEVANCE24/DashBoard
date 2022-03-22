@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/lightwhite"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="@dimen/size50"
+        android:layout_marginHorizontal="@dimen/size10"       
+        
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dashboard"
+            android:textStyle="bold"
+            android:textSize="@dimen/size30"
+            android:textColor="@color/black"          
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/size10"
+             
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            app:cardCornerRadius="@dimen/size10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size10"
+            >
+            <ImageView
+                android:layout_width="@dimen/size50"
+                android:layout_height="@dimen/size50"
+                android:src="@drawable/image"                
+                />
+
+        </androidx.cardview.widget.CardView>
+        
+   </RelativeLayout>
+
+         <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size150"
+            android:backgroundTint="@color/ultramarineblue"
+            app:cardCornerRadius="@dimen/size20"
+            android:layout_margin="@dimen/size15"> 
+        
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/size15"            
+                >
+            
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monthtv"
+                    android:text="@string/january"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size15"
+                    android:layout_marginRight="@dimen/size10"
+                />         
+                                      
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moneytv"
+                    android:text="@string/d500"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size40"                
+                    android:layout_below="@+id/monthtv"
+                />
+                <ProgressBar
+                    android:layout_width="@dimen/size270"
+                    android:layout_height="@dimen/size20"
+                    android:id="@+id/ProgressBar"
+                    android:layout_below="@+id/moneytv"
+                    style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+                    android:progress="70"
+                    android:max="100"
+                    android:progressTint="@android:color/white"
+                    android:progressBackgroundTint="@android:color/white"                
+                
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/statistics"
+                    android:layout_above="@+id/progresstv"                    
+                    android:layout_marginLeft="@dimen/size20"
+                    android:layout_alignParentRight="true"
+                                   
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progresstv"
+                    android:text="@string/p70"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"                                
+                    android:layout_alignTop="@+id/ProgressBar"
+                    android:layout_marginLeft="@dimen/size20"
+                    android:textSize="@dimen/size15"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spendtargettv"
+                    android:text="@string/dailyspendtarget"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size15"
+                    android:layout_below="@+id/ProgressBar"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spendmoneytv"
+                    android:text="@string/d16.67"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/size15"
+                    android:layout_below="@+id/ProgressBar"
+                    android:layout_toRightOf="@+id/spendtargettv"
+                    />
+
+            </RelativeLayout>  
+    
+           </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="@dimen/size30">
+
+         <TextView
+            android:layout_width="wrap_content"           
+            android:text="@string/dailyspends"
+            android:id="@+id/dailyspend"
+            android:textStyle="bold"       
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size10"
+            android:layout_alignParentLeft="true"
+            />
+    
+         <TextView
+            android:layout_width="wrap_content"        
+            android:text="@string/seeall"        
+            android:textColor="@color/ultramarineblue"
+            android:textStyle="bold"        
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/size10"
+            />
+
+     </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/dailyspend"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/size15"
+            android:layout_marginTop="@dimen/size05"
+            android:id="@+id/dailyspendcard"  
+            android:layout_margin="@dimen/size15"
+           >
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/size20"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/size15"
+                android:layout_marginRight="@dimen/size15"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:id="@+id/bankcard"
+                    android:backgroundTint="@color/sunsetorange"
+                    app:cardCornerRadius="@dimen/size10"                 
+                     >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bank"
+                        android:id="@+id/banklogo"                        
+                        android:layout_gravity="center"
+                     />                  
+                
+                </androidx.cardview.widget.CardView>
+               
+                <TextView
+                    android:text="@string/netbanking"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/bankcard"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:id="@+id/netbanking"
+                    android:textColor="@android:color/black"                    
+                    android:layout_height="wrap_content"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/netbanking"
+                    android:text="@string/d365.89"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_marginTop="@dimen/size05"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/bankcard"/>
+               <TextView
+                    android:layout_marginTop="@dimen/size15"
+                    android:id="@+id/netbankprice"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/grey"
+                    android:layout_height="wrap_content"
+                    android:text="@string/today"/>
+
+                 <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:id="@+id/foodcard"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_below="@+id/bankcard"
+                    android:backgroundTint="@color/crayolayellow"
+                    app:cardCornerRadius="@dimen/size10"
+           
+    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/food"
+                        android:id="@+id/banklogo" 
+                        android:layout_gravity="center"
+                     />   
+                
+                </androidx.cardview.widget.CardView>
+                 
+                 <TextView
+                    android:text="@string/fooddrinks"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/foodcard"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_below="@+id/bankcard"
+                    android:layout_marginTop="@dimen/size10"
+                    android:id="@+id/foodtext"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                     android:layout_marginLeft="@dimen/size10"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/foodtext"
+                    android:layout_marginTop="@dimen/size05"
+                    android:textColor="@android:color/black"
+                    android:text="@string/d165.99"
+                    android:layout_toRightOf="@+id/foodcard"/>
+                <TextView
+                    android:layout_marginTop="@dimen/size25"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#808080"
+                    android:layout_below="@+id/bankcard"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date1"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/size40"
+                    android:layout_height="@dimen/size40"
+                    android:id="@+id/dresscard"
+                    android:layout_marginTop="@dimen/size10"
+                    android:layout_below="@+id/foodcard"
+                    android:backgroundTint="@color/mountainmeadow"
+                    app:cardCornerRadius="@dimen/size10">
+
+           
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/dress"              
+                        android:id="@+id/clothes"
+                        android:layout_gravity="center"                                 
+                     
+                    />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:text="@string/clothes"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/dresscard"
+                    android:layout_marginLeft="@dimen/size10"
+                    android:layout_below="@+id/foodcard"
+                    android:layout_marginTop="@dimen/size10"
+                    android:id="@+id/clothestext"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/clothestext"
+                android:layout_marginTop="@dimen/size05"
+                android:textColor="@android:color/black"
+                android:text="@string/d65.09"
+                android:paddingBottom="@dimen/size20"
+                android:layout_toRightOf="@+id/dresscard"/>
+                <TextView
+                    android:layout_marginTop="@dimen/size25"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#808080"
+                    android:layout_below="@+id/foodcard"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date2"
+                    />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size10"
+             > 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/dailyspendcard"
+                android:text="@string/wishlist"   
+                android:id="@+id/wishlist"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size10"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"            
+                android:text="@string/seeall"            
+                android:textColor="@color/ultramarineblue"
+                android:textStyle="bold"  
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size10"
+                /> 
+
+        </RelativeLayout>
+    
+          <HorizontalScrollView
+                android:layout_below="@+id/dashlayout"
+                android:layout_marginTop="@dimen/size10"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/size15"
+                android:scrollbars="none"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:id="@+id/tshirtcard"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_below="@+id/foodcard"
+                        android:backgroundTint="@color/ultramarineblue"
+                        app:cardCornerRadius="@dimen/size10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size10"                       
+                            android:src="@drawable/tee"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tee"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center"
+                       
+                            />
+                        </LinearLayout>
+                
+                    </androidx.cardview.widget.CardView>
+                
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:id="@+id/gymcard"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:backgroundTint="@color/mountainmeadow"
+                        app:cardCornerRadius="@dimen/size10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/size10"
+                            android:src="@drawable/gym"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gym"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center"
+                            />
+                    
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:id="@+id/bikecard"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_below="@+id/foodcard"
+                        android:backgroundTint="@color/crayolayellow"
+                        app:cardCornerRadius="@dimen/size10">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size10"                        
+                            android:layout_gravity="center"
+                            android:src="@drawable/bike"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bike"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center"
+                            />
+                    
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:id="@+id/moneycard"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:layout_below="@+id/foodcard"
+                        android:backgroundTint="@color/sunsetorange"
+                        app:cardCornerRadius="@dimen/size10"
+                        >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/linearLayout2">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/size10"                       
+                            android:layout_gravity="center"
+                            android:src="@drawable/money"
+                            android:id="@+id/imageView2" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/savings"
+                            android:textSize="@dimen/size15"
+                            android:textColor="@android:color/white"
+                            android:layout_gravity="center"
+                            android:id="@+id/textView3" 
+                            />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                            android:layout_width="@dimen/size70"
+                            android:layout_height="@dimen/size70"
+                            android:layout_marginLeft="@dimen/size10"
+                            android:id="@+id/dresscard"
+                            android:layout_marginTop="@dimen/size10"
+                            android:layout_below="@+id/foodcard"
+                            android:backgroundTint="@color/ultramarineblue"
+                            app:cardCornerRadius="@dimen/size10">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size10"
+                                android:layout_gravity="center"
+                                android:src="@drawable/tee"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/tee"
+                                android:textSize="@dimen/size15"
+                                android:textColor="@android:color/white"
+                                android:layout_gravity="center"
+                                android:id="@+id/textView3" 
+                                />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                     <androidx.cardview.widget.CardView
+                        android:layout_width="@dimen/size70"
+                        android:layout_height="@dimen/size70"
+                        android:id="@+id/gymcard2"
+                        android:layout_marginLeft="@dimen/size10"
+                        android:layout_marginTop="@dimen/size10"
+                        android:backgroundTint="@color/mountainmeadow"
+                        app:cardCornerRadius="@dimen/size10"
+                        >
+                         <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/size10"
+                                android:layout_gravity="center"
+                                android:src="@drawable/gym"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/gym"
+                                android:textSize="@dimen/size15"
+                                android:textColor="@android:color/white"
+                                android:layout_gravity="center"
+                            />
+                
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+            
+               </LinearLayout>       
+        
+          </HorizontalScrollView>
+
+
+    </LinearLayout>
+
+</ScrollView>
