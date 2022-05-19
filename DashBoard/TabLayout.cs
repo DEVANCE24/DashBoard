@@ -23,6 +23,7 @@ namespace DashBoard
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.tablayout);
+           
 
             BottomAppBar _bottomAppBar = FindViewById<BottomAppBar>(Resource.Id.bottomAppBar);
             BottomNavigationView _bottomNavigationView = FindViewById<BottomNavigationView>(Resource.Id.bottomNavigationView);
